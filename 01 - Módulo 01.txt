@@ -1,0 +1,57 @@
+É importante salientar que, toda e qualquer atividade em tecnologia, possuímos mais de um caminho para solucionar o problema. 
+
+
+Tendo isso em vista, para Front-End, temos 3 bases:
+
+
+- HTML (HyperText Markup Language);
+
+	Sua função é “Marcar”, logo com HTML, definimos a semântica, estrutura e auxilia na acessibilidade da página.
+
+
+- CSS (Cascading Style Sheet);
+
+	Sua função é aplicação de estilos. Através do CSS definimos a aparência da página, sua apresentação nos diversos tipos de telas.
+
+
+Logo, HTML é uma linguagem de Marcação e CSS de Estilização. Para finalizar, temos uma linguagem de programação em Front-End, o JavaScript.
+
+
+- JavaScript (ou Js):
+
+	É uma linguagem de programação de alto nível (ou seja, parece muito com a “linguagem humana”) responsável pelas ações e comportamentos das páginas web.
+
+
+- Frameworks: 
+
+	Basicamente, frameworks são “códigos já feitos” que facilitam o desenvolvimento no dia a dia. Cada framework tem uma função e um modo de uso.
+
+
+Para o desenvolvimento, tanto Front quanto Back, usamos IDEs. 
+
+
+- Para Front:
+
+	Uma das mais famosas é o VSCode. 
+
+
+- Para Java:
+
+	O IntelliJ.
+
+Em todos os casos, temos o GIT para versionar o código. E nas principais IDEs ele já é integrado, auxiliando no trabalho do desenvolvedor.
+
+
+
+Além das ferramentas, temos o modo Debug/Inspecionar do Navegador, lá podemos testar informações do JavaScript, CSS, Informações de requisições e etc. Ajudando na resolução dos problemas, em testes, na possível criação de Scripts
+
+
+Recapitulando:
+
+HTML - Estrutura;
+CSS - Aparência;
+Js - Dinamismo;
+Frameworks - Bibliotecas de Códigos;
+GIT - Versionamento de Código (Usamos Geralmente o GitHub);
+IDEs - Ambiente que usamos para escrever os códigos;
+Plugins - Aumentam a Produtividade e auxiliam em algumas tarefas;
