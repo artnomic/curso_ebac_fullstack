@@ -1,0 +1,35 @@
+/* 
+O padrão do CSS é:
+
+seletor {
+    propriedade: valor 
+} 
+
+Para classes, usamos: "."
+
+.nomeClasse {
+    propriedade: valor
+}
+
+Para IDs, usamos: "#"
+
+#nomeId {
+    propriedade: valor
+}
+
+
+Podemos usar mais de um elemento por vez: .title, .subtitle{...}
+
+
+Confira a listadas principais pseudo-classes: 
+1) :first-child–use para selecionar a primeira ocorrência do elemento. 
+2) :last-child–use para selecionar a última ocorrência do elemento. 
+3) :hover–use para estilizar o elemento quando passarmos o mouse por cima. 
+4):focus–use para estilizar um elemento quando o foco estiver nele. 
+5):checked–use para estilizar inputsdo tipo checkbox e radio, quando estes estiverem marcados. 
+6) :required–use para estilizar inputsque sejam obrigatórios. 
+7) :optional–use para estilizar inputsque sejam opcionais.
+
+
+*/
+
