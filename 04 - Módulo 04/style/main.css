@@ -39,13 +39,30 @@ Confira a listadas principais pseudo-classes:
     padding: 0;
 }
 
-body > header {
+body > header, body > footer {
     background-color: #2F3640;
     padding: 16px 0;
     color: #F5F6FA;
 }
 
-header .container {
+body, #sports { 
+    background-color: #bbb;
+}
+
+#economy { 
+    background-color: #cac9c9;
+}
+
+#glamour { 
+    background-color: #ebeaea;
+}
+
+#comedy {
+    background-color: #f7f7f7
+}
+
+
+header .container, footer p {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,6 +70,8 @@ header .container {
 
 header li {
     display: inline;
+    margin-left: 16px;
+    font-weight: bold;
 }
 
 header li a {
@@ -64,7 +83,7 @@ header li a:hover {
     text-decoration: underline;
 }
 
-.container {
+.container, footer p {
     width: 1366px;
     margin: 0 auto;
 }
@@ -76,7 +95,8 @@ header li a:hover {
 }
 
 .articles article img {
-    height: 180px;
+    /* height: 180px; */
+    width: 100%;
 }
 
 .articles article {
@@ -101,9 +121,38 @@ article .articles h3 {
     color: #FFFFFF;
     padding: 8px;
     display: inline-block;
+    text-decoration: none;
+    margin-top: 8px;
+    font-weight: bold;
 }
 
 .articles article a:hover {
     background-color: #FFFFFF;
     color: blueviolet;
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p, header li a, footer {
+    font-size: 18px;
+}
+
+footer p {
+    justify-content: center;
 }
