@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML com JS</title>
+    <link rel="stylesheet" href="./style/main.css" />
+</head>
+
+<body>
+
+    <!-- 
+        1) Crie um formulário HTML que possua dois campos numéricos:
+            campo A
+            campo B
+        2) Insira um botão para submeter o formulário.
+        3) Crie uma validação no JavaScript, na qual o formulário será válido caso o número B seja maior que o número A.
+        4) Exiba uma mensagem positiva para o usuário quando o formulário for válido e uma mensagem negativa quando for inválido.
+    -->
+
+    <div class="container">
+        <h1>EBAC Exercícios - HTML e JS</h1>
+        <h2>Comparadora</h2>
+        <form id="form-contadora">
+            <input type="number" id="numero-a" required placeholder="Informe o número A" />
+            <input type="number" id="numero-b" required placeholder="Informe o número B" />
+            <p class="error-message">Hmmm, a conta deu erro! O número B precisa ser maior que o número A</p>
+            <button type="submit" id="btn-teste">Testar!</button>
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
