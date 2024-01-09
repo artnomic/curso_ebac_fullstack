@@ -22,6 +22,9 @@ form.addEventListener('submit', function (e) {
 
         numberA.value = '';
         numberB.value = '';
+
+        numberA.style.border = '1px solid black'
+        numberB.style.border = '1px solid black'
     } else {
         numberB.style.border = '1px solid red';
         document.querySelector('.error-message').style.display = 'block';
