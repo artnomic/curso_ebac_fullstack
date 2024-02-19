@@ -1,24 +1,19 @@
 const form = document.getElementById('form-contadora');
 const numberA = document.getElementById('numero-a');
 const numberB = document.getElementById('numero-b');
-
-// const validNumberA = numberA.value;
-// const validNumberB = numberB.value;
-
 const containerMensagemSucesso = document.querySelector('.success-message');
 
 function validNumber(a, b) {
-    a = parseInt(a);
-    b = parseInt(b);
+    
     return b > a;
 }
 
 form.addEventListener('submit', function (e) {
     let formValid = false;
     e.preventDefault();
-
+    
     const mensagemSucesso = `Uhuul! O número B: ${numberB.value} é maior que o número A: ${numberA.value}`
-
+    
     formValid = validNumber(numberA.value, numberB.value)
 
     if (formValid) {
@@ -36,10 +31,10 @@ form.addEventListener('submit', function (e) {
     }
 })
 
-numberB.addEventListener('change', function (e) {
-    formValid = validNumber(numberA.value, numberB.value);
+numberB.addEventListener('change', function(e) {
+    formValid = validNumber(numberA.value , numberB.value);
 
-    if (!formValid) {
+    if(!formValid) {
         numberB.classList.add('error');
         document.querySelector('.error-message').style.display = 'block';
     } else {
@@ -48,6 +43,6 @@ numberB.addEventListener('change', function (e) {
     }
 });
 
-numberA.addEventListener('change', function (e) {
+numberA.addEventListener('change', function(e){
     containerMensagemSucesso.style.display = 'none';
 })
