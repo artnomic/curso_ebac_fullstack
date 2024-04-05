@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 16px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 28px;
+    background-color: azure;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    list-style: none;
+    cursor: pointer;
+    color: #000;
+    padding-left: 8px;
+}
+
+.container>img {
+    width: 360px;
+}
+
+.about {
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.sobre-loja {
+    padding: 16px;
+}
+
+h2 {
+    padding: 0 0 8px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 28px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 0.5%;
+    row-gap: 5%;
+}
+
+.produto {
+    max-width: 200px;
+    margin-bottom: 16px;
+    display: block;
+    align-items: center;
+}
+
+.produto img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 1em;
+}
+
+.produto button {
+    margin-top: 1em;
+    background-color: azure;
+    border-radius: 5px;
+    padding: 0.5em;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 350px) and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .about {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .produtos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
