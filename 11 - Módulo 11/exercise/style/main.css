@@ -90,7 +90,7 @@ h2 {
     cursor: pointer;
 }
 
-@media screen and (min-width: 350px) and (max-width: 640px) {
+@media screen and (max-width: 640px) {
     .container {
         max-width: 90%;
     }
