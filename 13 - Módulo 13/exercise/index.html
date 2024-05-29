@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValidaÊ</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/aê.png">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <!-- 
+    • Criar uma página que contenha os elementos:
+        • Carousel de imagens;
+        • Um layout com grid:
+            - Desktop teremos 3 itens por linha, 
+            - Tablet 2 itens por linha
+            - Smartphone 1 item por linha;
+        • Inserir um card dentro das colunas, o conteúdo do card fica a seu critério;
+    -->
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="./img/validae_completo.png" alt="Logo ValidaÊ" id="validae">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#hamburguer-menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="hamburguer-menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ferramenta">Ferramenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quem-somos">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- VALIDAÇÕES -->
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="inicio">
+                <div class="container main-validae">
+                    <span>Baixe o app que está revolucionando a confiança nas relações humanas:</span>
+                    <button type="button" id="btn-preview" class="btn btn-primary btn-lg">VEM AÊ!</button>
+                </div>
+                <div class="container">
+                    <img src="./img/xlabs_-_validaÊ-removebg-preview.png" alt="Mockup - ValidaÊ">
+                </div>
+            </section>
+            <section id="ferramenta">
+                <h2>Ferramenta</h2>
+                <div class="container">
+                    <nav class="nav nav-tabs">
+                        <button data-bs-toggle="tab" data-bs-target="#aba1" type="button" class="nav-link active">
+                            Eletrônicos
+                        </button>
+                        <button data-bs-toggle="tab" data-bs-target="#aba2" type="button" class="nav-link">
+                            Moda Masculina
+                        </button>
+                        <button data-bs-toggle="tab" data-bs-target="#aba3" type="button" class="nav-link">
+                            Moda Feminina
+                        </button>
+                    </nav>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="aba1">
+                            Conteúdo de Aba Eletrônicos
+                        </div>
+                        <div class="tab-pane" id="aba2">
+                            Conteúdo de Aba Moda Masculina
+                        </div>
+                        <div class="tab-pane" id="aba3">
+                            Conteúdo de Aba Moda Feminina
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="quem-somos">
+                <h2>Quem Somos</h2>
+            </section>
+            <section id="contato">
+                <h2>Contato</h2>
+            </section>
+        </div>
+
+        <!-- BOTÃO DE ALERTA -->
+        <button type="button" id="btn-checar-emails" class="btn btn-warning">Checar caixa de Mensagens</button>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div class="toast" id="mensagens-alerta">
+                <header class="toast-header">
+                    <strong>Importante</strong>
+                </header>
+                <div class="toast-body">
+                    Você possui 10 mensagens não lidas.
+                    <div class="mt-2 pt-2 border-top">
+                        <button data-bs-dismiss="toast" type="button" class="btn btn-danger">
+                            Descartar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./lib/bootstrap.bundle.min.js"></script>
+        <script src="./script/main.js"></script>
+
+</body>
+
+</html>
