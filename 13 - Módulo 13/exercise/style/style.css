@@ -8,7 +8,7 @@
 }
 
 span {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -16,27 +16,74 @@ h2 {
 }
 
 img#validae {
-    width: 360px;
+    width: 240px;
 }
 
 header {
+    margin-top: 25px;
     position: sticky;
     top: 0;
     left: 0;
-    border-bottom: 1px solid rgba(186, 25, 111, alpha);
 }
 
-.navbar-nav .nav-link.active, .nav-link {
+.navbar-nav .nav-link.active,
+.nav-link {
     color: #FFF;
     text-align: center;
 }
 
-.navbar-nav .nav-link.active, button {
+.navbar-nav .nav-link.active,
+button {
     background-color: #FFE7FF;
     color: #000;
 }
 
 section {
     height: 100vh;
-    padding-top: 120px;
+    padding-top: 80px;
+}
+
+#inicio .main-validae {
+    display: flex;
+    align-items: center;
+}
+
+#inicio .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#inicio .text-container span {
+    display: block;
+    text-align: center;
+    width: 85%;
+    margin-bottom: 25px;
+}
+
+#inicio img {
+    max-width: 150%;
+    height: auto;
+}
+
+.btn-link {
+    display: inline-block;
+    width: 50%;
+    height: 64px;
+    line-height: 64px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #E84C5D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    background-color: #E84C5D;
+    color: #FFE7FF;
 }
