@@ -11,17 +11,8 @@
 </head>
 
 <body>
-    <!-- 
-    • Criar uma página que contenha os elementos:
-        • Carousel de imagens;
-        • Um layout com grid:
-            - Desktop teremos 3 itens por linha, 
-            - Tablet 2 itens por linha
-            - Smartphone 1 item por linha;
-        • Inserir um card dentro das colunas, o conteúdo do card fica a seu critério;
-    -->
     <header id="cabecalho">
-        <div class="navbar navbar-expand-lg">
+        <div class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <img src="./img/validae_completo.png" alt="Logo ValidaÊ" id="validae">
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
@@ -45,21 +36,17 @@
         </div>
     </header>
 
-    <!-- VALIDAÇÕES -->
     <div data-bs-spy="scroll" data-bs-target="#cabecalho">
-        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
-            <div class="container">
-                <section id="inicio">
-                    <div class="container">
-                        <div class="container main-validae">
-                            <div class="text-container">
-                                <span>Acesse a solução que está revolucionando a confiança nas relações humanas:</span>
-                                <a href="https://validae.co" class="btn-link">ACESSA AÊ!</a>
-                            </div>
-                            <img src="./img/xlabs_-_validaÊ-removebg-preview.png" alt="Mockup - ValidaÊ">
-                        </div>
+        <div class="container">
+            <section id="inicio">
+                <div class="main-validae">
+                    <div class="text-container">
+                        <span>Acesse a solução que está revolucionando a confiança nas relações humanas:</span>
+                        <a href="https://validae.co" class="btn-link">ACESSA AÊ!</a>
                     </div>
-                </section>
+                    <img src="./img/xlabs_-_validaÊ-removebg-preview.png" alt="Mockup - ValidaÊ">
+                </div>
+            </section>
                 <section id="problemas">
                     <h2>PROBLEMÁTICAS</h2>
                     <div class="container">
@@ -88,7 +75,8 @@
                                         PROBLEMAS COM TROCAS
                                     </header>
                                     <div class="card-img">
-                                        <img class="card-picture" src="https://catracalivre.com.br/wp-content/uploads/2018/06/troca.jpg">
+                                        <img class="card-picture"
+                                            src="https://catracalivre.com.br/wp-content/uploads/2018/06/troca.jpg">
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">CONFIANÇA PARA AS TROCAS!</h4>
@@ -120,41 +108,59 @@
                 </section>
                 <section id="quem-somos">
                     <h2>QUEM SOMOS</h2>
-                    COLOCAR O CARROUSEL DE FOTOS COM LEGENDAS SOBRE O TIME
+                    <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div data-bs-interval="3000" class="carousel-item active">
+                                <img class="d-block w-100" src="https://placehold.co/800x400">
+                                <div class="carousel-caption">
+                                    <h2>ValidaÊ - Imagem 1</h2>
+                                </div>
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item">
+                                <img class="d-block w-100" src="https://placehold.co/800x400">
+                                <div class="carousel-caption">
+                                    <h2>ValidaÊ - Imagem 2</h2>
+                                </div>
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item">
+                                <img class="d-block w-100" src="https://placehold.co/800x400">
+                                <div class="carousel-caption">
+                                    <h2>ValidaÊ - Imagem 3</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev"
+                            type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next"
+                            type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
     </div>
 
+
     <footer>
         <div class="container">
-            <p>
-                &copy; validaê.co <em>powered by idwall.co</em> - Todos os direitos reservados - 2024
-            </p>
+            <p>&copy; validaê.co <em>powered by idwall.co</em> - Todos os direitos reservados - 2024</p>
         </div>
         <div class="social-links-div">
             <h2>CONTATO</h2>
             <ul class="social-links">
-                <li>
-                    <a href="#" title="Siga-nos no Instagram">
-                        <img class="img-social-links" src="./img/instagram.png" alt="Logo do Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" title="Siga-nos no GitHub">
-                        <img class="img-social-links" src="./img/github.png" alt="Logo do GitHub">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" title="Siga-nos no TikTok">
-                        <img class="img-social-links" src="./img/tiktok.png" alt="Logo do TikTok">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" title="Siga-nos no X">
-                        <img class="img-social-links" src="./img/x_twitter.png" alt="Logo do X">
-                    </a>
-                </li>
+                <li><a href="#" title="Siga-nos no Instagram"><img class="img-social-links" src="./img/instagram.png" alt="Logo do Instagram"></a></li>
+                <li><a href="#" title="Siga-nos no GitHub"><img class="img-social-links" src="./img/github.png" alt="Logo do GitHub"></a></li>
+                <li><a href="#" title="Siga-nos no TikTok"><img class="img-social-links" src="./img/tiktok.png" alt="Logo do TikTok"></a></li>
+                <li><a href="#" title="Siga-nos no X"><img class="img-social-links" src="./img/x_twitter.png" alt="Logo do X"></a></li>
             </ul>
         </div>
     </footer>
