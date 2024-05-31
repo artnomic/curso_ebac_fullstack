@@ -76,7 +76,7 @@ section {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #FFF;
+    color: #FFE7FF;
     background-color: #E84C5D;
     border: none;
     border-radius: 50px;
@@ -84,6 +84,6 @@ section {
 }
 
 .btn-link:hover {
-    background-color: #E84C5D;
-    color: #FFE7FF;
+    background-color: #BA196F;
+    color: #FFF;
 }
