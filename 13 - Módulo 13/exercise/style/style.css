@@ -118,3 +118,39 @@ section {
     background-color: #E84C5D;
     color: #FFE7FF;
 }
+
+/* carousel */
+
+
+/* footer */
+footer, footer .container, footer p, footer .social-links-div, footer h2, footer .social-links, footer .social-links a, .container em {
+    bottom: 0;
+    position: static;
+    width: 100%;
+    background-color: #EEEFFF;
+    color: #770B7B;
+    padding: 16px 0;
+}
+
+.img-social-links {
+    background-color: #EEEFFF;
+    color: #000;
+}
+
+footer p,
+.social-links-div {
+    text-align: center;
+}
+
+.social-links img {
+    height: 32px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
