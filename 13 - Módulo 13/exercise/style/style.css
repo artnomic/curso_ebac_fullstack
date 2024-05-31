@@ -20,10 +20,10 @@ img#validae {
 }
 
 header {
-    margin-top: 25px;
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1030;
 }
 
 .navbar-nav .nav-link.active,
@@ -39,7 +39,7 @@ button {
 }
 
 section {
-    height: 100vh;
+    height: 50vh;
     padding-top: 80px;
 }
 
@@ -86,4 +86,35 @@ section {
 .btn-link:hover {
     background-color: #BA196F;
     color: #FFF;
+}
+
+#problemas {
+    padding: 25px;
+    margin-bottom: 100px;
+}
+
+.card-header, .card-title, .card-text {
+    text-align: center;
+}
+
+.card {
+    max-width: 360px;
+    height: 500px;
+    position: relative;
+    z-index: 0;
+}
+
+.card-img {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.card-picture {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-structure-color {
+    background-color: #E84C5D;
+    color: #FFE7FF;
 }
