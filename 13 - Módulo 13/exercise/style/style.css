@@ -8,6 +8,7 @@
 body {
     background-color: #770B7B;
     color: #FFF;
+    padding-top: 80px;
 }
 
 span {
@@ -15,22 +16,20 @@ span {
 }
 
 h2 {
-    font-size: 4rem
+    font-size: 4rem;
 }
 
 img#validae {
     width: 240px;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1030;
-}
-
 #cabecalho {
     background-color: #770B7B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
 }
 
 .navbar-nav .nav-link.active,
@@ -46,32 +45,34 @@ button {
 }
 
 section {
-    height: 100vh;
     padding-top: 80px;
 }
 
 #inicio .main-validae {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 #inicio .text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
+    flex: 1;
+    margin: 20px;
 }
 
 #inicio .text-container span {
     display: block;
     text-align: center;
-    width: 85%;
+    width: 100%;
     margin-bottom: 25px;
 }
 
 #inicio img {
-    width: 75%;
+    width: 50%;
+    max-width: 400px;
     height: auto;
+    margin: 20px;
 }
 
 .btn-link {
@@ -97,18 +98,20 @@ section {
 
 #problemas {
     padding: 25px;
-    margin-bottom: 100px;
 }
 
-.card-header, .card-title, .card-text {
+.card-header,
+.card-title,
+.card-text {
     text-align: center;
 }
 
 .card {
-    max-width: 360px;
-    height: 500px;
-    position: relative;
-    z-index: 0;
+    height: 100%;
+    margin-bottom: 30px;
+    background-color: #E84C5D;
+    color: #FFE7FF;
+    border: none;
 }
 
 .card-img {
@@ -121,12 +124,8 @@ section {
     object-fit: cover;
 }
 
-.card-structure-color {
-    background-color: #E84C5D;
-    color: #FFE7FF;
-}
-
-.carousel, .carousel-item {
+.carousel,
+.carousel-item {
     background-color: #770B7B;
 }
 
@@ -135,7 +134,18 @@ section {
     color: #BA196F;
 }
 
-footer, footer .container, footer p, footer .social-links-div, footer h2, footer .social-links, footer .social-links a, footer .container a {
+#quem-somos {
+    margin-bottom: 50px;
+}
+
+footer,
+footer .container,
+footer p,
+footer .social-links-div,
+footer h2,
+footer .social-links,
+footer .social-links a,
+footer .container a {
     bottom: 0;
     position: static;
     width: 100%;
@@ -165,4 +175,75 @@ footer p,
 
 .social-links li a {
     text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.col-lg-4 {
+    width: 33.333333%;
+}
+
+@media (max-width: 992px) {
+    .col-lg-4 {
+        width: 50%;
+    }
+
+    #inicio .main-validae {
+        flex-direction: row; 
+    }
+
+    #inicio img {
+        width: 50%;
+    }
+
+    #inicio .text-container {
+        width: 50%;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-sm-6 {
+        width: 100%; 
+    }
+
+    .btn-link {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #inicio .main-validae {
+        flex-direction: column; 
+    }
+
+    #inicio img {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    #inicio .text-container {
+        width: 100%;
+    }
 }
