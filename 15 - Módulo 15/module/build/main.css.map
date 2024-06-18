@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../source/main.scss"],"names":[],"mappings":"AAGA;EACI,kBAJW;;;AAOf;EACI,kBARW;;AAUX;EACI,OAVQ;;;AAchB;EACI;EACA,kBAhBY;EAiBZ,OAlBW;;AAoBX;EACI;;AAGJ;EACI","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["../source/config/reset.scss","../source/sections/produto.scss","../source/config/colors.scss","../source/main.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;;;ACFJ;EACI,kBCHQ;;;ACIZ;EACI,kBDHc","file":"main.css"}

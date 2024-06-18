@@ -1,0 +1,5 @@
+@use '../config/colors';
+
+.produtos {
+    background-color: colors.$mainColor;
+}
