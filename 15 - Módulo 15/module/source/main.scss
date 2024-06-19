@@ -1,50 +1,82 @@
 @use './config/reset.scss';
+@use './config/variaveis.scss';
+@use 'sass:math';
 
 @mixin elementoForm() {
-    padding: 8px;
+    padding: pixelParaEm(8px);
     display: block;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: pixelParaEm(16px);
+}
+
+@function pixelParaEm ($alvoEmPixel, $contextoEmPixel: 16px) {
+    @return math.div($alvoEmPixel, $contextoEmPixel)+em;
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: variaveis.$corDeFundo;
 }
 
 .container {
-    max-width: 1024px;
+    max-width: pixelParaEm(1024px);
     width: 100%;
     margin: 0 auto;
 }
 
 header {
-    padding: 16px 0;
-    background-color: aqua;
+    padding: pixelParaEm(16px) 0;
+    background-color: variaveis.$corPrincipal;
     text-align: center;
+    color: variaveis.$corDeFundo;
 }
 
 .form-container {
-    height: calc(100vh - 70px);
+    height: calc(100vh - pixelParaEm(70px));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    form {
+    h2 {
+        font-size: pixelParaEm(48px);
+        text-align: center;
+    }
 
+    form {
         width: 100%;
-        max-width: 480px;
-        margin-top: 40px;
+        max-width: pixelParaEm(480px);
+        margin-top: pixelParaEm(40px);
+
+        label {
+            font-weight: bold;
+            cursor: pointer;
+        }
 
         input {
             @include elementoForm();
             background-color: transparent;
             border: none;
-            border-bottom: 1px solid #000;
+            border-bottom: pixelParaEm(3px) solid variaveis.$corPrincipal;
         }
 
         button {
             @include elementoForm();
+            background-color: variaveis.$corSecundaria;
+            border: none;
+            cursor: pointer;
+            font-size: pixelParaEm(18px);
+            font-weight: bold;
+            color: variaveis.$corDeFundo;
+
+            &:hover {
+                background-color: darken(variaveis.$corSecundaria, $amount: 15%);
+            }
         }
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    .container {
+        max-width: 80%;
     }
 }
