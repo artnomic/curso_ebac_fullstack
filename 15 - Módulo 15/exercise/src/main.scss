@@ -6,7 +6,7 @@
     @return math.div($alvoEmPixel, $contextoEmPixel) * 1em;
 }
 
-@mixin container($max-width: pixelParaEm(1024px)) {
+@mixin container() {
     max-width: pixelParaEm(1024px);
     width: 100%;
     margin: 0 auto;
