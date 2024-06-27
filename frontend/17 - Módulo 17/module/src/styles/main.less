@@ -1,7 +1,12 @@
 @import "../config/variaveis.less";
+@import "../config/reset.less";
 
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+.marginBottom8 {
+    margin-bottom: 8px;
+}
 
 body {
     background-color: @corDeFundo;
@@ -19,5 +24,34 @@ body {
 
     @media @breakpointMobile {
         max-width: 70%;
+    }
+}
+
+header {
+    padding: 24px;
+
+    .profile-avatar {
+        display: block;
+        margin: 0 auto 24px;
+        border-radius: 50%;
+    }
+}
+
+.profile-bio {
+    text-align: center;
+
+    &-name {
+        font-size: 16px;
+        .marginBottom8();
+    }
+
+    &-subtitle {
+        font-size: 14px;
+        .marginBottom8();
+    }
+
+    &-description {
+        font-size: 14px;
+        opacity: .7;
     }
 }
