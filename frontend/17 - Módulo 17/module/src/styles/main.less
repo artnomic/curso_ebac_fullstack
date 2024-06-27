@@ -1,4 +1,4 @@
-@import "../config/variaveis.less";
+@import "../config/mapas.less";
 @import "../config/reset.less";
 
 @breakpointMobile: ~"(max-width: 767px)";
@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: @corDeFundo;
-    color: @corDosTextos;
+    background-color: #colors[backgroundColor];
+    color: #colors[textColor];
 }
 
 .container {
@@ -53,5 +53,24 @@ header {
     &-description {
         font-size: 14px;
         opacity: .7;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+
+    li {
+        list-style: none;
+
+        img {
+            transition: all ease .3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 }
