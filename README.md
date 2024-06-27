@@ -21,10 +21,8 @@ Bem-vindo ao repositório do curso de Desenvolvimento Fullstack com Java! Este r
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Linguagem de Programação:** Java e JavaScript
+- **Linguagem de Programação:** JavaScript
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap, SASS, Gulp, LESS
-- **Backend:** 
-- **Banco de Dados:** 
 - **Ferramentas:** Git
 
 ## 🚀 Como Iniciar
@@ -45,12 +43,6 @@ Bem-vindo ao repositório do curso de Desenvolvimento Fullstack com Java! Este r
 curso-ebac-fullstack/
 ├── frontend/
 │   ├── 01 - Módulo 01/
-│   └── XX/
-├── backend/
-│   ├── XX/
-│   └── XX/
-├── database/
-│   ├── XX/
 │   └── XX/
 └── README.md
 ```
