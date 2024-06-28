@@ -11,10 +11,17 @@ body {
   background-color: #192A56;
   color: #F5F6FA;
 }
+li {
+  list-style: none;
+}
 .container {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
@@ -27,7 +34,7 @@ body {
   }
 }
 header {
-  padding: 24px;
+  padding-bottom: 24px;
 }
 header .profile-avatar {
   display: block;
@@ -64,4 +71,24 @@ header .profile-avatar {
 }
 .social-links li img:hover {
   transform: scale(1.1);
+}
+.projects-list {
+  margin-top: 32px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #0097E6;
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #F5F6FA;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #0097E6;
+  transition: all ease 0.5s;
+}
+.projects-list-item a:hover {
+  color: #0097E6;
+  background-color: transparent;
 }
