@@ -13,6 +13,7 @@
     "grunt": "^1.6.1"
   },
   "devDependencies": {
+    "grunt-concurrent": "^3.0.0",
     "grunt-contrib-less": "^3.0.0",
     "grunt-contrib-sass": "^2.0.0"
   }
