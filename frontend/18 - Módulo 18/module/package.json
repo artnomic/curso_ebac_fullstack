@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "grunt": "grunt", 
+    "grunt": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "grunt": "^1.6.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-sass": "^2.0.0"
   }
 }
