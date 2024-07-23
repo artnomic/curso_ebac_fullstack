@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras CSS</title>
+    <style>
+        button {
+            background-color: blue;
+        }
+
+        .btn-sucesso {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    
+    A Ordem do CSS de Specificity é a seguinte: 
+    
+    1° - !important - Ocorre ao usar o "!important" ao lado da modificação na estilização do CSS
+    2° - inline - Ocorre quando o parametro "style = 'XXXX'" é definido na TAG.
+    3º - id - Ocorre quando o parametro "id = 'XXXX'" é definido na TAG e Estilizado no CSS, seja no head ou em um arquivo externo.
+    4º - classe - Ocorre quando o parametro "class = 'XXXX'" é definido na TAG e Estilizado no CSS, seja no head ou em um arquivo externo.
+    5º - tag - Ocorre quando a TAG é estilizada no CSS, seja no head ou em um arquivo externo.
+    
+    -->
+
+    <button style="background-color:red" class="btn-sucesso">Confirmar</button>
+</body>
+
+</html>
