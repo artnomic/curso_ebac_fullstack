@@ -43,6 +43,8 @@ Bem-vindo ao repositório do curso de Desenvolvimento Fullstack com Java! Este r
 curso-ebac-fullstack/
 ├── frontend/
 │   ├── 01 - Módulo 01/
+      ├── module
+      └── exercise
 │   └── XX/
 └── README.md
 ```
