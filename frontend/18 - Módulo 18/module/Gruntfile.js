@@ -31,16 +31,21 @@ module.exports = function (grunt) {
             },
             html: {
                 files: ['src/index.html'],
-                task: ['replace:dev']
+                tasks: ['replace:dev']
             }
         },
         replace: {
             dev: {
                 options: {
                     patterns: [{
-                        match: 'ENDERECO_DO_CSS',
-                        replacement: './styles/main.css'
-                    }]
+                            match: 'ENDERECO_DO_CSS',
+                            replacement: './styles/main.css'
+                        },
+                        {
+                            match: 'ENDERECO_DO_JS',
+                            replacement: '../src/scripts/main.js'
+                        }
+                    ]
                 },
                 files: [{
                     expand: true,
@@ -75,7 +80,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        clean: ['prebuild'] 
+        clean: ['prebuild']
     })
 
     grunt.loadNpmTasks('grunt-contrib-less');
