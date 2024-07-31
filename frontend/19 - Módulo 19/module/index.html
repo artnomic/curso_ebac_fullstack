@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regras CSS</title>
-    <link rel="stylesheet" href="./smacss/base.css">
+    <!-- <link rel="stylesheet" href="./smacss/base.css">
     <link rel="stylesheet" href="./smacss/layout.css">
     <link rel="stylesheet" href="./smacss/module.css">
     <link rel="stylesheet" href="./smacss/tema-a.css">
-    <link rel="stylesheet" href="./smacss/tema-b.css">
+    <link rel="stylesheet" href="./smacss/tema-b.css"> -->
+    <link rel="stylesheet" href="./bem/main.css">
 </head>
 
-<body class="tema-a">
-    <!-- 
+<!-- <body class="tema-a">
     
     A Ordem do CSS de Specificity é a seguinte: 
     
@@ -22,8 +22,6 @@
     3º - id - Ocorre quando o parametro "id = 'XXXX'" é definido na TAG e Estilizado no CSS, seja no head ou em um arquivo externo.
     4º - classe - Ocorre quando o parametro "class = 'XXXX'" é definido na TAG e Estilizado no CSS, seja no head ou em um arquivo externo.
     5º - tag - Ocorre quando a TAG é estilizada no CSS, seja no head ou em um arquivo externo.
-    
-    -->
 
     <div id="header">
         <div class="container">
@@ -88,6 +86,16 @@
             })
         }
     </script>
+</body> -->
+
+<body>
+    <form class="form">
+        <div class="form__control">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome">
+        </div>
+        <button type="submit" class="form__submit form__submit--sending">Enviar</button>
+    </form>
 </body>
 
 </html>
