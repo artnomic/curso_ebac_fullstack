@@ -22,7 +22,7 @@ Bem-vindo ao repositório do curso de Desenvolvimento Fullstack com Java! Este r
 ## 🛠️ Tecnologias Utilizadas
 
 - **Linguagem de Programação:** JavaScript
-- **Frontend:** HTML, CSS, JavaScript, Bootstrap, SASS, Gulp, LESS, Grunt
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap, SASS, Gulp, LESS, Grunt, BEM, SMACSS
 - **Ferramentas:** Git
 
 ## 🚀 Como Iniciar
