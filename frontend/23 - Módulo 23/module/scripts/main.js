@@ -3,26 +3,44 @@ $(document).ready(function () {
 
     $('#btn-buscar-cep').click(function () {
         const cep = $('#cep').val();
-        const endpoint = `https://viacep.com.br/ws/${cep}/json/`;
+        const endpoint = `https://viacep.com.br/ws/${cep}/json/resultado`;
         const botao = $(this);
 
         $(botao).find('i').addClass('d-none');
         $(botao).find('span').removeClass('d-none');
 
-        $.ajax(endpoint).done(function (data) {
-            const logradouro = data.logradouro;
-            const bairro = data.bairro;
-            const cidade = data.localidade;
-            const estado = data.uf;
+        // $.ajax(endpoint).done(function (data) {
+        //     const logradouro = data.logradouro;
+        //     const bairro = data.bairro;
+        //     const cidade = data.localidade;
+        //     const estado = data.uf;
 
-            const endereco = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
-            $('#endereco').val(endereco);
+        //     const endereco = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
+        //     $('#endereco').val(endereco);
 
-            setTimeout(function () {
-                $(botao).find('i').removeClass('d-none');
-                $(botao).find('span').addClass('d-none');
-            }, 500);
+        //     setTimeout(function () {
+        //         $(botao).find('i').removeClass('d-none');
+        //         $(botao).find('span').addClass('d-none');
+        //     }, 500);
 
-        });
+        // });
+
+        fetch(endpoint).then(function (response) {
+                console.log(response.json);
+                return response.json();
+            })
+            .then(function (json) {
+                const logradouro = json.logradouro;
+                const bairro = json.bairro;
+                const cidade = json.localidade;
+                const estado = json.uf;
+
+                const endereco = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
+                $('#endereco').val(endereco);
+            })
+        setTimeout(function () {
+            $(botao).find('i').removeClass('d-none');
+            $(botao).find('span').addClass('d-none');
+        }, 500)
     });
 });
