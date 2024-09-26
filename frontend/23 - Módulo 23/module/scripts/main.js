@@ -9,23 +9,8 @@ $(document).ready(function () {
         $(botao).find('i').addClass('d-none');
         $(botao).find('span').removeClass('d-none');
 
-        // $.ajax(endpoint).done(function (data) {
-        //     const logradouro = data.logradouro;
-        //     const bairro = data.bairro;
-        //     const cidade = data.localidade;
-        //     const estado = data.uf;
-
-        //     const endereco = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
-        //     $('#endereco').val(endereco);
-
-        //     setTimeout(function () {
-        //         $(botao).find('i').removeClass('d-none');
-        //         $(botao).find('span').addClass('d-none');
-        //     }, 500);
-
-        // });
-
-        fetch(endpoint).then(function (response) {
+        fetch(endpoint)
+        .then(function (response) {
                 console.log(response.json);
                 return response.json();
             })
@@ -38,9 +23,14 @@ $(document).ready(function () {
                 const endereco = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
                 $('#endereco').val(endereco);
             })
-        setTimeout(function () {
-            $(botao).find('i').removeClass('d-none');
-            $(botao).find('span').addClass('d-none');
-        }, 500)
+            .catch(function(erro) {
+                alert("Ocorreu um erro ao buscar o CEP!");
+            })
+            .finally(function () {
+                setTimeout(function () {
+                    $(botao).find('i').removeClass('d-none');
+                    $(botao).find('span').addClass('d-none');
+                }, 500)
+            })
     });
 });
