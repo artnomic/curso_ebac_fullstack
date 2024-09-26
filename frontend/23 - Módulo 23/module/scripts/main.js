@@ -33,4 +33,12 @@ $(document).ready(function () {
                 }, 500)
             })
     });
+
+    $('#formulario-pedido').submit(function (event) {
+        event.preventDefault();
+        
+        if($('#nome').val().length == 0) {   
+            throw new Error('Preencha o nome!');
+        }
+    })
 });
