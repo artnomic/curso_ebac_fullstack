@@ -10,7 +10,7 @@ $(document).ready(function () {
         $(botao).find('span').removeClass('d-none');
 
         fetch(endpoint)
-        .then(function (response) {
+            .then(function (response) {
                 console.log(response.json);
                 return response.json();
             })
@@ -23,7 +23,7 @@ $(document).ready(function () {
                 const endereco = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
                 $('#endereco').val(endereco);
             })
-            .catch(function(erro) {
+            .catch(function (erro) {
                 alert("Ocorreu um erro ao buscar o CEP!");
             })
             .finally(function () {
@@ -37,7 +37,7 @@ $(document).ready(function () {
     $('#formulario-pedido').submit(function (event) {
         event.preventDefault();
 
-        if($('#nome').val().length == 0) {   
+        if ($('#nome').val().length == 0) {
             throw new Error('Preencha o nome!');
         }
     })
