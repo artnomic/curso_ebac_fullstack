@@ -59,3 +59,10 @@ const nomeFilter = alunos2.filter(function (item) {
   return item.nome === "Arthur";
 });
 console.log(nomeFilter);
+
+const nums = [10, 20, 30];
+const soma = nums.reduce(function (total, itemAtual) {
+  total += itemAtual;
+  return total;
+}, 0); 
+console.log(soma);
