@@ -26,3 +26,7 @@ dadosDaApi = 10;
 dadosDaApi = true;
 dadosDaApi = [1,2,3]
 dadosDaApi = {nome: "Arthur", idade: 23, nacionalidade: "Brasileira", estudando: true};
+
+//Tipagem implícita
+let idadeImplicita = 25;
+// idadeImplicita = "Arthur";
