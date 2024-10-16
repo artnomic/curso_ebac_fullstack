@@ -1,47 +1,30 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
+const nome = "Arthur";
+const meuObj = {
+  nome: "Arthur",
+  sobrenome: "Berson",
+  idade: 23,
+  filmeFavorito: "Creed"
+}
+
+const nomeCompleto = `${nome} ${meuObj.sobrenome}`;
+
+function dizOi(nome) {
+  return `Oi, ${nome}!`;
+}
+
+const depay = "https://soucg.com.br/wp-content/uploads/2024/10/Memphis-Depay-pode-deixar-o-Corinthians-apos-crise-com-patrocinadora-768x576.jpg"
+const garro = "https://stcotvfoco.com.br/2024/10/rodrigo-garro.jpg"
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <h1>Olá {{nomeCompleto}}</h1>
+  <img v-bind:src="depay" alt="Memphis Depay">
+  <img :src="garro" alt="Rodrigo Garro">
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
