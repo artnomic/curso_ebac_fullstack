@@ -28,6 +28,8 @@ const estado = reactive({
   email: ' ',
   saldo: 5000,
   transferindo: 0,
+  nomes: ['Arthur', 'Giovanna', 'Rodrigo', 'Maria'],
+  nomeAInserir: '',
 });
 
 function incrementa() {
@@ -52,6 +54,12 @@ function validaValorTransferencia() {
   return saldo >= transferindo;
 }
 
+function cadastraNome() {
+  if(estado.nomeAInserir.length <= 2) return;
+  if(estado.nomes.includes(estado.nomeAInserir)) return;
+
+  return estado.nomes.push(estado.nomeAInserir);
+}
 </script>
 
 <template>
@@ -100,6 +108,11 @@ function validaValorTransferencia() {
   <br />
   <hr />
 
+  <ul>
+    <li v-for="nome in estado.nomes">{{ nome }}</li>
+  </ul>
+  <input @keyup="evento => estado.nomeAInserir = evento.target.value" placeholder="Cadastrar novo nome" />
+  <button @click="cadastraNome()" type="button">Cadastrar</button>
 </template>
 
 <style scoped>
@@ -110,5 +123,6 @@ img {
 .invalido {
   outline-color: red;
   border-color: red;
+  background-color: pink;
 }
 </style>
