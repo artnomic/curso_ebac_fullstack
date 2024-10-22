@@ -26,6 +26,8 @@ const gostaDoGarro = false;
 const estado = reactive({
   contador: 0,
   email: ' ',
+  saldo: 5000,
+  transferindo: 0,
 });
 
 function incrementa() {
@@ -38,6 +40,16 @@ function decrementa() {
 
 function alteraEmail(evento) {
   estado.email = evento.target.value;
+}
+
+function mostraSaldoFuturo() {
+  const {saldo, transferindo} = estado
+  return saldo - transferindo;
+}
+
+function validaValorTransferencia() {
+  const {saldo, transferindo} = estado
+  return saldo >= transferindo;
 }
 
 </script>
@@ -70,10 +82,33 @@ function alteraEmail(evento) {
   {{ estado.email }}
   <!-- <input type="email" @keyup="evento => estado.email = evento.target.value" /> -->
   <input type="email" @keyup="alteraEmail" />
+
+  <br />
+  <hr />
+
+  Saldo: {{ estado.saldo }}
+  <br />
+  Transferindo: {{ estado.transferindo }}
+  <br />
+  Saldo futuro: {{ mostraSaldoFuturo() }}
+  <br />
+  <input :class= "{ invalido: !validaValorTransferencia() }" type="number" @keyup="evento => estado.transferindo = evento.target.value" />
+  <br />
+  <button v-if="validaValorTransferencia()" type="button">Transferir</button>
+  <span v-else>Valor insuficiente</span>
+
+  <br />
+  <hr />
+
 </template>
 
 <style scoped>
 img {
   max-width: 200px;
+}
+
+.invalido {
+  outline-color: red;
+  border-color: red;
 }
 </style>
