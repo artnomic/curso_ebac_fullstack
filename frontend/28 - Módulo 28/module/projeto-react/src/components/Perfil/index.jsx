@@ -1,15 +1,11 @@
 import './perfil.css';
 
-const Perfil = () => {
-    const usuario = {
-        nome: 'Arthur Berson',
-        avatar: 'https://github.com/artnomic.png',
-    }
-
+// eslint-disable-next-line react/prop-types
+const Perfil = ({ nome, endereco }) => {
     return (
         <div>
-            <img className='perfil-avatar' src={usuario.avatar} alt="Avatar" />
-            <h3 className='perfil-titulo'>{usuario.nome}</h3>
+            <img className='perfil-avatar' src={endereco} alt="Avatar" />
+            <h3 className='perfil-titulo'>{nome}</h3>
         </div>
     );
 };
