@@ -1,10 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Formulario = () => {
-    let [materiaA, setMateriaA] = useState(0);
-    let [materiaB, setMateriaB] = useState(0);
-    let [materiaC, setMateriaC] = useState(0);
-    let [nome, setNome] = useState('Aluno');
+    const [materiaA, setMateriaA] = useState(0);
+    const [materiaB, setMateriaB] = useState(0);
+    const [materiaC, setMateriaC] = useState(0);
+    const [nome, setNome] = useState('Aluno');
+
+    useEffect(() => {
+        console.log("O nome é:", nome);
+    }, [nome])
+
+    useEffect(() => {
+        console.log("O componente iniciou");
+
+        return () => {
+            console.log("O componente foi removido");
+        }
+    }, [])
 
     const alteraNome = e => {
         setNome(e.target.value);
