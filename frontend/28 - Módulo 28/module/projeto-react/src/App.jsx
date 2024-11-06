@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className='container'>
-        <input className='container input' type="text" placeholder='Informe o nome de usuário do GitHub' onBlur={e => setnomeDeUsuario(e.target.value)} />
+        <input className='container input' type="text" placeholder='Informe o nome de usuário do GitHub' onChange={e => setnomeDeUsuario(e.target.value)} />
       </div>
       {nomeDeUsuario.length >= 4 && (
         <>
