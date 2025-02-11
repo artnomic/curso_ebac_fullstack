@@ -14,6 +14,8 @@ describe('Testes para a home', () => {
         cy.contains('.contato', 'Teste').should('exist')
         cy.contains('.contato', 'teste@exercicio.com').should('exist')
         cy.contains('.contato', '+55 11 91234-5678').should('exist')
+
+        cy.screenshot('tela-add')
     })
 
     it('Deve alterar um contato na agenda', () => {
@@ -24,11 +26,15 @@ describe('Testes para a home', () => {
         cy.get('.alterar').click()
 
         cy.contains('Nome@email.com').should('be.visible')
+
+        cy.screenshot('tela-change')
     });
 
     it('Deve Remover um contato na Agenda', () => {
         cy.get('.delete').first().click()
         cy.contains('Nome@email.com').should('not.exist')
+
+        cy.screenshot('tela-delete')
     });
 
 })
