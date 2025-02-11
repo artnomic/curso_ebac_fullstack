@@ -1,8 +1,0 @@
-.header {
-    padding: 16px;
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
-    background-color: var(--corPrincipal);
-    color: var(--corSecundaria);
-}
