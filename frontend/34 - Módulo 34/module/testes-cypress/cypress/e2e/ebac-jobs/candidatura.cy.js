@@ -9,6 +9,7 @@ describe('Testes para a página de Candidatura', () => {
     it('Deve levar o usuário até o formulário de inscrição', () => {
         cy.get('.Vaga_vagaLink__DeFkk').first().click()
         cy.get('input').should('have.length', 7)
+        cy.screenshot('tela-inscricao')
     });
 
     it('Deve preencher o formulário de inscrição', () => {
@@ -24,5 +25,7 @@ describe('Testes para a página de Candidatura', () => {
         cy.on('window:alert', (conteudo) => {
             expect(conteudo).contain('Obrigado pela candidatura!')
         })
+
+        cy.screenshot('tela-inscricao-preenchida')
     })
 })
