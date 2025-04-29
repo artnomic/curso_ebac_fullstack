@@ -1,0 +1,286 @@
+[33mcommit 8710e53c67759353e28e3485c552e3b57e85f71c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Apr 28 19:16:16 2025 -0300
+
+    Revert "feat: create exercise"
+    
+    This reverts commit be76fff2628d72d9c8622035fd145ad4db19dc7b.
+
+[33mcommit be76fff2628d72d9c8622035fd145ad4db19dc7b[m[33m ([m[1;31morigin/ex7[m[33m, [m[1;32mex7[m[33m)[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Apr 28 19:11:41 2025 -0300
+
+    feat: create exercise
+
+[33mcommit 163b4ccb95b97c7684d609849d7bbfa829380720[m[33m ([m[1;31morigin/exercicio_cypress[m[33m, [m[1;32mexercicio_cypress[m[33m)[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Feb 11 18:19:58 2025 -0300
+
+    subindo apenas o exercicio
+
+[33mcommit d2e16e652edd69d7080d74c6dfd555e4d2e01eb8[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Feb 11 18:16:35 2025 -0300
+
+    add .gitignore
+
+[33mcommit 8a96fa24b701a3376aa700e42bb3d32566c98d4f[m[33m ([m[1;31morigin/exercise[m[33m, [m[1;32mexercise[m[33m)[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Feb 11 18:02:11 2025 -0300
+
+    feat: test with cypress to report and runs
+
+[33mcommit ac534ef1f02271a2577023165f247a8f894e3590[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Feb 11 18:00:25 2025 -0300
+
+    feat: test with cypress to report and runs
+
+[33mcommit a7f14227bd21009db905152bde28057f2f2dbe57[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Feb 11 14:25:23 2025 -0300
+
+    feat: test with cypress to report and runs
+
+[33mcommit 269889fc7c53ab3841de609bbd3ee61e33609e21[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Feb 11 13:58:28 2025 -0300
+
+    feat: test with cypress to forms
+
+[33mcommit 3c05f8627d3cf293d7d00431c02dab47661b4981[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Feb 10 14:07:09 2025 -0300
+
+    feat: init test with cypress
+
+[33mcommit c0c5b4481fa5b9cc5e477a78d3e0065d0cf415a5[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Jan 27 19:24:48 2025 -0300
+
+    test: create front test
+
+[33mcommit 1c05b6565b53c15f526ab6ca0199e688aa9645b4[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Jan 20 16:02:04 2025 -0300
+
+    test: create first unity test
+
+[33mcommit cc8184686b2333013bc7f0f111d10efc15824c9a[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Jan 20 16:01:32 2025 -0300
+
+    test: create first unity test
+
+[33mcommit c85745a4a4ba3a51440ffc6f02df9428780edde2[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Nov 25 15:20:35 2024 -0300
+
+    feat: create a theme
+
+[33mcommit 400890f109cfce4be450c01786d199d4264655fb[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Nov 25 14:52:59 2024 -0300
+
+    feat: create a sidebar
+
+[33mcommit 9db92de572247d7e2f4d255e9bb8704210731bf7[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Nov 19 15:33:10 2024 -0300
+
+    create projetos section
+
+[33mcommit 4483c41f522722863a41a89022e44355b95e89e8[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Thu Nov 14 18:51:18 2024 -0300
+
+    create sobre section
+
+[33mcommit 2acda0d48f279cdb2a31f92a5f051bc74a7b7ca7[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Thu Nov 14 18:36:35 2024 -0300
+
+    create text components
+
+[33mcommit 811f2e3553c928da2bcded8af2f5101034b76900[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Nov 11 18:35:05 2024 -0300
+
+    init portifolio project
+
+[33mcommit 21e9268b66c2f4e525049780f3ee6237d121d12c[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Nov 11 17:59:10 2024 -0300
+
+    create global css config
+
+[33mcommit f8d17b1ac15dcde18ab1d6217043fbadf3a7d1cb[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Thu Nov 7 19:27:00 2024 -0300
+
+    feat: config project
+
+[33mcommit 520086416c5350c38bbfd0a87189e3ab6c258c4a[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Thu Nov 7 17:18:40 2024 -0300
+
+    feat: finish project
+
+[33mcommit 7507714075d721002a2790c282e96010c5fbb3b4[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Wed Nov 6 18:48:17 2024 -0300
+
+    feat: finish project
+
+[33mcommit 80df29b3fc2b26adc802467603004f43c5ed2d41[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Wed Nov 6 18:09:05 2024 -0300
+
+    feat: finish project
+
+[33mcommit 027335d4d446be72dc5a23366d31bbb5897f514d[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Wed Nov 6 18:02:42 2024 -0300
+
+    feat: finish project
+
+[33mcommit f6abd836ba341bee854aae9c6ed617bd1c91f960[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Nov 5 18:52:18 2024 -0300
+
+    feat: add a form
+
+[33mcommit d68b81e74575d3dc2805b20c46102b9a40c90c30[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Nov 4 16:11:55 2024 -0300
+
+    feat: add a useEffect
+
+[33mcommit 41e4d19830256a715d0deb4dfeb35006673b6d27[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Nov 4 11:36:51 2024 -0300
+
+    feat: add a forms
+
+[33mcommit e73725938fd5997f5314a6c8a8f8e1d221ade954[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Fri Nov 1 11:47:19 2024 -0300
+
+    feat: create components
+
+[33mcommit 6af4ddc6b2328a725fbbdab86eb245ef352087a3[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Fri Nov 1 10:25:37 2024 -0300
+
+    feat: init a project
+
+[33mcommit cd5f4ed005f211d4c1822860c604ffa60b1456df[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Oct 28 16:36:13 2024 -0300
+
+    module
+
+[33mcommit 01f2644ceff4c62b1c111113484d5cc15032f7cf[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Oct 28 16:13:06 2024 -0300
+
+    feat: create an app 'Calculator'
+
+[33mcommit 8d09cfeef87e0027c1735abf24800e0f7c94ae5d[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Oct 28 11:06:28 2024 -0300
+
+    feat: create an app 'Todo'
+
+[33mcommit 9ecc640357232b91a81977fbf79a89667d26ad18[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Oct 28 10:07:35 2024 -0300
+
+    feat: create a project
+
+[33mcommit 85508132eaa20ce303a1d37064fbcfd2edb4a6ea[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Oct 22 18:45:27 2024 -0300
+
+    feat: add list
+
+[33mcommit 00dfeb3ba23d6d1c2a37f5e0a6033884c31a6eda[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Oct 22 17:32:59 2024 -0300
+
+    feat: add conditional style
+
+[33mcommit 84a32cf2c28032cf17f27d12305c354f4716d627[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Fri Oct 18 20:00:26 2024 -0300
+
+    feat: renderização condicional
+
+[33mcommit 4f8634b6c068bc7d447c7e424d9dcf561a222f72[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Fri Oct 18 19:38:16 2024 -0300
+
+    feat: renderização condicional
+
+[33mcommit 0e1e1c2fd48ca5152b2871ad7956b02decf298c5[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Wed Oct 16 15:57:09 2024 -0300
+
+    feat: integre o vuejs
+
+[33mcommit f8af6e406f83a93db94d09634e8ce135793cd4a6[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Wed Oct 16 14:35:37 2024 -0300
+
+    feat: install
+
+[33mcommit f39e1353884ab9b124625763236e235f5e5a7b8d[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Wed Oct 16 14:35:27 2024 -0300
+
+    feat: install
+
+[33mcommit 6826a3e19b78d499268fb22dac1d4f575ca3e397[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Oct 15 18:32:23 2024 -0300
+
+    feat: exercise
+
+[33mcommit 883e937f8525e74127dbfa4973923b0b3c2a4829[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Oct 15 18:12:13 2024 -0300
+
+    feat: DOM
+
+[33mcommit afa5f10ca6b114035c314644510a64cd55d8030c[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Tue Oct 15 18:02:43 2024 -0300
+
+    feat: interface
+
+[33mcommit 21d1781adc0ce631fee510295f46da8d12bc76a2[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Oct 14 19:00:45 2024 -0300
+
+    feat: oo
+
+[33mcommit 3855d1ab75b1739b24003a47abf315f68ed48038[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Oct 14 18:40:04 2024 -0300
+
+    feat: tipos custmizados
+
+[33mcommit 3b11edea81434eb2a523537d1ddef6e3a7ef55fc[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Oct 14 18:27:23 2024 -0300
+
+    feat: casting
+
+[33mcommit 85da8b432415d0904cb734ed33e47583e602f5ed[m
+Author: artnomic <arthurpe44@gmail.com>
+Date:   Mon Oct 14 18:14:52 2024 -0300
+
+    feat: tipos de funcoes
+
+[33mcommit 6b4b4895d25652d130251e987480d79115bc125f[m
+Autho
