@@ -10,3 +10,5 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
+/backend/14 - Módulo 14/Projeto 1/CadastroJPanel/nbproject/private/
+/backend/14 - Módulo 14/Projeto 1/CadastroJPanel/build/
