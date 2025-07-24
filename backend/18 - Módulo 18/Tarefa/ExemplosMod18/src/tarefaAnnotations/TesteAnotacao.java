@@ -1,5 +1,5 @@
 package tarefaAnnotations;
 
-@Tabela(value = "NomeDaTabela")
+@Tabela(value = "TabelaEbac")
 public class TesteAnotacao {
 }
