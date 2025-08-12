@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01 - Módulo 01/01 - Módulo 01.iml" filepath="$PROJECT_DIR$/01 - Módulo 01/01 - Módulo 01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07 - Módulo - 07/07 - Módulo - 07.iml" filepath="$PROJECT_DIR$/07 - Módulo - 07/07 - Módulo - 07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08 - Módulo 08/08 - Módulo 08.iml" filepath="$PROJECT_DIR$/08 - Módulo 08/08 - Módulo 08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09 - Módulo 09/09 - Módulo 09.iml" filepath="$PROJECT_DIR$/09 - Módulo 09/09 - Módulo 09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10 - Módulo 10/10 - Módulo 10.iml" filepath="$PROJECT_DIR$/10 - Módulo 10/10 - Módulo 10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11 - Módulo 11/11 - Módulo 11.iml" filepath="$PROJECT_DIR$/11 - Módulo 11/11 - Módulo 11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12 - Módulo 12/12 - Módulo 12.iml" filepath="$PROJECT_DIR$/12 - Módulo 12/12 - Módulo 12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13 - Módulo 13/13 - Módulo 13.iml" filepath="$PROJECT_DIR$/13 - Módulo 13/13 - Módulo 13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15 - Módulo 15/15 - Módulo 15.iml" filepath="$PROJECT_DIR$/15 - Módulo 15/15 - Módulo 15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16 - Módulo 16/16 - Módulo 16.iml" filepath="$PROJECT_DIR$/16 - Módulo 16/16 - Módulo 16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17 - Módulo 17/17 - Módulo 17.iml" filepath="$PROJECT_DIR$/17 - Módulo 17/17 - Módulo 17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/18 - Módulo 18/18 - Módulo 18.iml" filepath="$PROJECT_DIR$/18 - Módulo 18/18 - Módulo 18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/19 - Módulo 19/19 - Módulo 19.iml" filepath="$PROJECT_DIR$/19 - Módulo 19/19 - Módulo 19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20 - Módulo 20/20 - Módulo 20.iml" filepath="$PROJECT_DIR$/20 - Módulo 20/20 - Módulo 20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/22 - Módulo 22/22 - Módulo 22.iml" filepath="$PROJECT_DIR$/22 - Módulo 22/22 - Módulo 22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14 - Módulo 14/Projeto 1/CadastroJPanel/CadastroJPanel.iml" filepath="$PROJECT_DIR$/14 - Módulo 14/Projeto 1/CadastroJPanel/CadastroJPanel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14 - Módulo 14/Projeto 1/CadastroSwing/CadastroSwing.iml" filepath="$PROJECT_DIR$/14 - Módulo 14/Projeto 1/CadastroSwing/CadastroSwing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/backend.iml" filepath="$PROJECT_DIR$/.idea/backend.iml" />
+    </modules>
+  </component>
+</project>
