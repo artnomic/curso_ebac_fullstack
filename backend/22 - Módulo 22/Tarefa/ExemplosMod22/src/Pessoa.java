@@ -69,4 +69,14 @@ public class Pessoa {
     public int hashCode() {
         return Objects.hash(id, nome);
     }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "id='" + id + '\'' +
+                ", nome='" + nome + '\'' +
+                ", nacionalidade='" + nacionalidade + '\'' +
+                ", idade=" + idade +
+                '}';
+    }
 }

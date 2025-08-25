@@ -1,8 +1,6 @@
-import br.com.artnomic.TesteCliente;
+import br.com.artnomic.clientes.TesteCliente;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class TesteClienteTest {
 

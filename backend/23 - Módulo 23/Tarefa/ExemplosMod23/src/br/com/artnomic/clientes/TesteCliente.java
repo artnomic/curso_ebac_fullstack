@@ -1,4 +1,4 @@
-package br.com.artnomic;
+package br.com.artnomic.clientes;
 
 public class TesteCliente {
     private String nome;
