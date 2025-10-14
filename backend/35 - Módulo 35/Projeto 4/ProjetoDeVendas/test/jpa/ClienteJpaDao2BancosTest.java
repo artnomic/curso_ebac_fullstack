@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.Random;
 
 import main.br.com.artnomic.dao.jpa.ClienteJpaDAO;
+import main.br.com.artnomic.dao.jpa.ClienteJpaDB2DAO;
 import main.br.com.artnomic.dao.jpa.IClienteJpaDAO;
 import main.br.com.artnomic.domain.jpa.ClienteJpa;
 import main.br.com.artnomic.exceptions.DAOException;
@@ -16,23 +17,45 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ClienteJpaDAOTest {
 
-    private IClienteJpaDAO clienteDAO;
+public class ClienteJpaDao2BancosTest {
+
+    private IClienteJpaDAO<ClienteJpa> clienteDao;
+
+    private IClienteJpaDAO<ClienteJpa> clienteDB2Dao;
 
     private Random rd;
 
-    public ClienteJpaDAOTest() {
-        this.clienteDAO = new ClienteJpaDAO();
+    public ClienteJpaDao2BancosTest() {
+        this.clienteDao = new ClienteJpaDAO();
+        this.clienteDB2Dao = new ClienteJpaDB2DAO();
         rd = new Random();
     }
 
     @After
     public void end() throws DAOException {
-        Collection<ClienteJpa> list = clienteDAO.buscarTodos();
+        Collection<ClienteJpa> list1 = clienteDao.buscarTodos();
+        excluir1(list1);
+
+        Collection<ClienteJpa> list2 = clienteDB2Dao.buscarTodos();
+        excluir2(list2);
+    }
+
+    private void excluir1(Collection<ClienteJpa> list) {
         list.forEach(cli -> {
             try {
-                clienteDAO.excluir(cli);
+                clienteDao.excluir(cli);
+            } catch (DAOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        });
+    }
+
+    private void excluir2(Collection<ClienteJpa> list) {
+        list.forEach(cli -> {
+            try {
+                clienteDB2Dao.excluir(cli);
             } catch (DAOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -41,89 +64,95 @@ public class ClienteJpaDAOTest {
     }
 
     @Test
-    public void pesquisarCliente() throws TipoChaveNaoEncontradaException, DAOException, MaisDeUmRegistroException, TableException, TableException {
+    public void pesquisarCliente() throws TipoChaveNaoEncontradaException, DAOException, MaisDeUmRegistroException, TableException {
         ClienteJpa cliente = criarCliente();
-        clienteDAO.cadastrar(cliente);
+        clienteDao.cadastrar(cliente);
 
-        ClienteJpa clienteConsultado = clienteDAO.consultar(cliente.getId());
+        ClienteJpa clienteConsultado = clienteDao.consultar(cliente.getId());
         Assert.assertNotNull(clienteConsultado);
+
+        cliente.setId(null);
+        clienteDB2Dao.cadastrar(cliente);
+
+        ClienteJpa clienteConsultado2 = clienteDB2Dao.consultar(cliente.getId());
+        Assert.assertNotNull(clienteConsultado2);
 
     }
 
     @Test
     public void salvarCliente() throws TipoChaveNaoEncontradaException, MaisDeUmRegistroException, TableException, DAOException {
         ClienteJpa cliente = criarCliente();
-        ClienteJpa retorno = clienteDAO.cadastrar(cliente);
+        ClienteJpa retorno = clienteDao.cadastrar(cliente);
         Assert.assertNotNull(retorno);
 
-        ClienteJpa clienteConsultado = clienteDAO.consultar(retorno.getId());
+        ClienteJpa clienteConsultado = clienteDao.consultar(retorno.getId());
         Assert.assertNotNull(clienteConsultado);
 
-        clienteDAO.excluir(cliente);
+        clienteDao.excluir(cliente);
 
-        ClienteJpa clienteConsultado1 = clienteDAO.consultar(retorno.getId());
+        ClienteJpa clienteConsultado1 = clienteDao.consultar(retorno.getId());
         Assert.assertNull(clienteConsultado1);
     }
 
     @Test
     public void excluirCliente() throws TipoChaveNaoEncontradaException, MaisDeUmRegistroException, TableException, DAOException {
         ClienteJpa cliente = criarCliente();
-        ClienteJpa retorno = clienteDAO.cadastrar(cliente);
+        ClienteJpa retorno = clienteDao.cadastrar(cliente);
         Assert.assertNotNull(retorno);
 
-        ClienteJpa clienteConsultado = clienteDAO.consultar(cliente.getId());
+        ClienteJpa clienteConsultado = clienteDao.consultar(cliente.getId());
         Assert.assertNotNull(clienteConsultado);
 
-        clienteDAO.excluir(cliente);
-        clienteConsultado = clienteDAO.consultar(cliente.getId());
+        clienteDao.excluir(cliente);
+        clienteConsultado = clienteDao.consultar(cliente.getId());
         Assert.assertNull(clienteConsultado);
     }
 
     @Test
-    public void alterarCliente() throws TipoChaveNaoEncontradaException, MaisDeUmRegistroException, TableException, DAOException {
+    public void alterarCliente() throws TipoChaveNaoEncontradaException, MaisDeUmRegistroException, TableException, DAOException, TableException {
         ClienteJpa cliente = criarCliente();
-        ClienteJpa retorno = clienteDAO.cadastrar(cliente);
+        ClienteJpa retorno = clienteDao.cadastrar(cliente);
         Assert.assertNotNull(retorno);
 
-        ClienteJpa clienteConsultado = clienteDAO.consultar(cliente.getId());
+        ClienteJpa clienteConsultado = clienteDao.consultar(cliente.getId());
         Assert.assertNotNull(clienteConsultado);
 
         clienteConsultado.setNome("Rodrigo Pires");
-        clienteDAO.alterar(clienteConsultado);
+        clienteDao.alterar(clienteConsultado);
 
-        ClienteJpa clienteAlterado = clienteDAO.consultar(clienteConsultado.getId());
+        ClienteJpa clienteAlterado = clienteDao.consultar(clienteConsultado.getId());
         Assert.assertNotNull(clienteAlterado);
         Assert.assertEquals("Rodrigo Pires", clienteAlterado.getNome());
 
-        clienteDAO.excluir(cliente);
-        clienteConsultado = clienteDAO.consultar(clienteAlterado.getId());
+        clienteDao.excluir(cliente);
+        clienteConsultado = clienteDao.consultar(clienteAlterado.getId());
         Assert.assertNull(clienteConsultado);
     }
 
     @Test
     public void buscarTodos() throws TipoChaveNaoEncontradaException, DAOException {
         ClienteJpa cliente = criarCliente();
-        ClienteJpa retorno = clienteDAO.cadastrar(cliente);
+        ClienteJpa retorno = clienteDao.cadastrar(cliente);
         Assert.assertNotNull(retorno);
 
         ClienteJpa cliente1 = criarCliente();
-        ClienteJpa retorno1 = clienteDAO.cadastrar(cliente1);
+        ClienteJpa retorno1 = clienteDao.cadastrar(cliente1);
         Assert.assertNotNull(retorno1);
 
-        Collection<ClienteJpa> list = clienteDAO.buscarTodos();
+        Collection<ClienteJpa> list = clienteDao.buscarTodos();
         assertTrue(list != null);
         assertTrue(list.size() == 2);
 
         list.forEach(cli -> {
             try {
-                clienteDAO.excluir(cli);
+                clienteDao.excluir(cli);
             } catch (DAOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         });
 
-        Collection<ClienteJpa> list1 = clienteDAO.buscarTodos();
+        Collection<ClienteJpa> list1 = clienteDao.buscarTodos();
         assertTrue(list1 != null);
         assertTrue(list1.size() == 0);
     }

@@ -1,6 +1,7 @@
 package main.br.com.artnomic.dao.jpa;
 
 import main.br.com.artnomic.dao.generic.jpa.GenericJpaDAO;
+import main.br.com.artnomic.dao.generic.jpa.GenericJpaDB1DAO;
 import main.br.com.artnomic.domain.jpa.ClienteJpa;
 import main.br.com.artnomic.domain.jpa.ProdutoJpa;
 import main.br.com.artnomic.domain.jpa.VendaJpa;
@@ -12,7 +13,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-public class VendaJpaDAO extends GenericJpaDAO<VendaJpa, Long> implements IVendaJpaDAO {
+public class VendaJpaDAO extends GenericJpaDB1DAO<VendaJpa, Long> implements IVendaJpaDAO {
 
     public VendaJpaDAO() {
         super(VendaJpa.class);

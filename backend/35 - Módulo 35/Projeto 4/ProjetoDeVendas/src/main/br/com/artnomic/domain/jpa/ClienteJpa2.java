@@ -2,18 +2,12 @@ package main.br.com.artnomic.domain.jpa;
 
 import main.br.com.artnomic.dao.Persistente;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 @Entity
 @Table(name = "TB_CLIENTE")
-public class ClienteJpa implements Persistente {
+public class ClienteJpa2 implements Persistente {
 
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="cliente_seq")
@@ -89,4 +83,9 @@ public class ClienteJpa implements Persistente {
     public void setId(Long id) {
         this.id = id;
     }
+
+
+
+
+
 }

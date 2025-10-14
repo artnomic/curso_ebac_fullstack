@@ -1,14 +1,13 @@
 package dao;
 
 import main.br.com.artnomic.dao.generic.jpa.GenericJpaDAO;
+import main.br.com.artnomic.dao.generic.jpa.GenericJpaDB1DAO;
 import main.br.com.artnomic.dao.jpa.IVendaJpaDAO;
 import main.br.com.artnomic.domain.jpa.VendaJpa;
 import main.br.com.artnomic.exceptions.DAOException;
 import main.br.com.artnomic.exceptions.TipoChaveNaoEncontradaException;
 
-import java.util.Collection;
-
-public class VendaExclusaoJpaDAO extends GenericJpaDAO<VendaJpa, Long> implements IVendaJpaDAO {
+public class VendaExclusaoJpaDAO extends GenericJpaDB1DAO<VendaJpa, Long> implements IVendaJpaDAO {
 
     public VendaExclusaoJpaDAO() {
         super(VendaJpa.class);
