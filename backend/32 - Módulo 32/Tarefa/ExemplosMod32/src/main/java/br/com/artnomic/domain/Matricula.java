@@ -29,6 +29,20 @@ public class Matricula {
             referencedColumnName = "id", nullable = false)
     private Curso curso;
 
+    @OneToOne
+    @JoinColumn(name = "id_aluno_fk",
+            foreignKey = @ForeignKey(name = "fk_aluno_matricula"),
+            referencedColumnName = "id", nullable = false)
+    private Aluno aluno;
+
+    public Aluno getAluno() {
+        return aluno;
+    }
+
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
     public Curso getCurso() {
         return curso;
     }
